@@ -1,14 +1,64 @@
 <!DOCTYPE html>
-<html lang="pt-br" dir="ltr">
-
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="estilos2.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos2.css">
 
-  <title>Pet's vst</title>
+  <title>Formulario Mascotas</title>
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0px;
+      background-image: url(img/cocac.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+    .container {
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #000000d5;
+      border-radius: 10px;
+      background-color: #cfba72;
+    }
+    .container h2 {
+      text-align: center;
+      color: #000000d5;
+    }
+    .container label {
+      display: block;
+      margin-bottom: 5px;
+      color: #000000d5;
+    }
+    .container input[type="text"], .container input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .container input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #000;
+      color: white;
+      cursor: pointer;
+    }
+    .container input[type="submit"]:hover {
+      background-color: #000;
+    }
+    .encabezado{
+      color: black;
+    }
+    body{
+        background-color: rgb(175, 156, 115);
+    }
     header {
       background-color: rgb(0, 0, 0);
       width: 100%;
@@ -76,6 +126,7 @@
     }
 
     header nav ul li a:hover {
+  
       text-decoration-color: #000000;
     }
 
@@ -92,14 +143,15 @@
     .encabezado {
       width: 100%;
     }
-  </style>
-</head>
 
+  </style>
+
+</head>
 <body>
 
   <div class="nombre">
-   Pet's Vst
-  </div>
+    Pet's Vst
+   </div>
 
   <header>
     <div class="contenedor">
@@ -111,6 +163,7 @@
         <ul class="nav">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="mision_vision.html">Mision | Vision</a></li>
+          <li><a href="Tfactura.html">Tabla sql</a></li>
           <li><a href="">Formularios</a>
             <ul>
               <li><a href="clientes.html">Cliente</a></li>
@@ -125,36 +178,47 @@
       </nav>
     </div>
   </header>
+
   
-  <section align="center">
-    <img src="imag/logo-transparent-png.png" alt="Lo siento" width="180" height="180">
-  </section>
+<div class="container">
+  <h2>Formulario Factura</h2>
+  <form action="#" method="post">
 
-  <div style="margin-top: 30px;">
+    <label for="id_factura">id_factura:</label>
+    <input type="id_factura" id="id_factura" name="id_factura" required><br>
 
-    <section class="TMOP_backgroundContainer" style="margin-bottom: 5%;">
+    <label for="fecha">Fecha Emision:</label>
+    <input type="date" id="fecha" name="fecha" required><br>
 
-      <article class="TMOP_Container">
-        <div class="TMOP_detailsContainer">
-          <div class="onPla" style="padding-top: 5%;"> <h2>Adopciones en Pet's Vst</h2></div>
-          <p class="TMOP_p"> Hay muchas mascotas en busca de un hogar lleno de amor y diversión.<br> Acércate a tu
-            tienda Petco y
-            conoce las asociaciones civiles en donde puedes abrirle la puerta <br> de tu corazón al nuevo consentido de
-            la
-            familia.</p>
-          <h2> ¡Fomentemos la adopcion y no la compra de mascotas!</h2>
-        </div>
-      </article>
-    </section>
-    <center>
-      <div
-        style="margin: 4%;border: 2px; border-color: black; object-fit: cover; border-radius: 15px; width:auto; height: auto;">
-      </div>
-    </center>
-  </DIV>
-  <footer>
-    Melanie Santos Requenes 5-I
-  </footer>
+    <label for="idCliente">id_Cliente:</label>
+    <input type="idCliente" id="idCliente" name="idCliente" required><br>
+
+    <label for="id_mascota">id_mascota:</label>
+    <input type="id_mascota" id="id_mascota" name="id_mascota" required><br>
+
+    <label for="Impuesto">Impuesto:</label>
+    <input type="Impuesto" id="Impuesto" name="Impuesto" required><br>
+
+    <label for="Total">Total a pagar:</label>
+    <input type="Total" id="Total" name="Total" required><br>
+
+    
+
+    
+
+    <input type="submit" value="Enviar">
+  </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+  
+
+    <footer>
+        <p align="center">Santos Requenes Melanie 5-I</p>
+    </footer>
 </body>
-
 </html>

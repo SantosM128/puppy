@@ -1,0 +1,397 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.So-Logo {
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 10px;
+}
+
+/* Navigation Menu */
+
+.Pla-logo {
+    background-color: black;
+}
+
+.arrow {
+    border: solid rgb(110, 110, 110);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 8px;
+}
+
+.arrow:hover {
+    border: solid rgb(53, 37, 3);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 8px;
+}
+
+.down {
+    transform: rotate(45deg);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: whitesmoke;
+}
+
+.logoMenu-container {
+    display: flex;
+}
+
+.signSearch-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding-right: 30px;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-list a:hover {
+    color: rgb(66, 113, 190);
+}
+
+.menu-container li {
+    list-style: none;
+}
+
+.item {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.item-1 {
+    width: 800px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    border: solid 1px rgb(0, 0, 0);
+    /* padding-left:70px; */
+}
+
+.item-2 {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    border: solid 1px rgb(0, 0, 0);
+    /* object-fit:contain; */
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: 50% 50%;
+    overflow: hidden;
+}
+
+.title {
+    color: whitesmoke;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: white;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+}
+
+.findOutMore {
+    /* height: 35px;
+    width: 135px; */
+    /* display: inline-block; */
+    padding: 10px 15px;
+    border-radius: 30px;
+    background: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: solid 2px black;
+    outline: solid 2px transparent;
+}
+
+.findOutMore:hover {
+    outline: solid 2px white;
+    cursor: pointer;
+}
+
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px;
+    gap: 20px;
+}
+
+.box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 25px;
+}
+
+
+.TMOP_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.TMOP_Image_box {
+    height: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 25px;
+}
+
+.TMOP_boxContainer {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    /* margin-bottom:50px; */
+}
+
+.TMOP_backgroundContainer {
+    display: flex;
+    background: linear-gradient(45deg, rgb(87, 23, 160), rgb(6, 6, 59));
+}
+
+.TMOP_Image_box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.TMOP_Container {
+    display: flex;
+    flex-direction: column;
+    width: 1900px;
+    margin: 50px auto;
+    padding: 0 30px;
+    gap: 60px;
+}
+
+.TMOP_detailsContainer {
+    width: 30%;
+    /* display: flex; */
+    flex-direction: column;
+}
+
+
+.TMOP_detailsContainer h2 {
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: white;
+}
+
+.TMOP_box p {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2rem;
+    color: white;
+}
+
+.TMOP_p {
+    color: grey;
+    margin-bottom: 40px;
+    line-height: 2rem;
+    font-size: 1.25rem;
+    color: rgb(177, 177, 177);
+}
+
+
+
+.learnMore {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(43, 82, 255);
+    border: solid white 2px;
+    margin-top: 40px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    outline: 3px solid transparent;
+    cursor: pointer;
+    /* transition: border 0.1s; */
+}
+
+.learnMore:hover {
+    width: 150px;
+    outline: 2px solid rgb(43, 82, 255);
+}
+
+.container {
+    margin: 0 auto;
+    background-color: black;
+    display: flex;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.GT_container {
+    position: relative;
+    /* background-color: black; */
+    position: center;
+    width: 1900px;
+    max-height: 50vh;
+    /* height: 50vh; */
+    display: flex;
+    flex-direction: column;
+    padding-top: 15vh;
+    gap: 30px;
+    /* background-image: url(Images/Grandtorismo.jpg); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-bottom: 3vh;
+    padding-left: 4vw;
+}
+
+.GT_title {
+    color: whitesmoke;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+
+
+
+/* ________________________ social media  */
+
+.socialMedia_container {
+    display: Flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: Center;
+    gap: 80px;
+    margin-top: 70px;
+    margin-bottom: 135px;
+}
+
+.socialMedia_container h2 {
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: rgb(92, 92, 92);
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+}
+
+.socialMedia_container img {
+    height: 125px;
+    margin: 0 10px;
+}
+
+/* _______________________________________footer  */
+
+.footer_background {
+    background: rgb(22, 62, 173);
+    padding: 60px 30px;
+}
+
+.footer_container {
+    display: flex;
+    color: white;
+    max-width: 1900px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.globe_logo {
+    height: 30px;
+}
+
+.footer_item1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.footer_lists {
+    display: flex;
+}
+
+.countryRegions {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 10px;
+}
+
+.footer_logo {
+    height: 100px;
+    align-self: flex-start;
+    /* align-self: flex-start; */
+}
+
+.footer_Sonylogo {
+    height: 60px;
+    /* width: 60px; */
+    align-self: flex-start;
+}
+
+.esrbLogo {
+    height: 60px;
+}
+
+.esrb_section {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer_lists li {
+    list-style: none;
+    cursor: pointer;
+    margin: 20px 50px;
+}
+
+.footerItem {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
